@@ -1,0 +1,69 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #f4f1e8; color: #263b32; font-family: Arial, sans-serif; line-height: 1.6; }
+.encabezado { background: #183b32; color: white; padding: 15px 6%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+.marca { display: flex; align-items: center; gap: 12px; }
+.marca img { width: 62px; height: 62px; border-radius: 50%; }
+.nombre { margin: 0; font-family: Georgia, serif; font-size: 23px; font-weight: bold; letter-spacing: 2px; }
+.frase-marca { margin: 0; color: #d9bd7b; font-size: 12px; }
+.menu { list-style: none; display: flex; flex-wrap: wrap; gap: 18px; margin: 0; padding: 0; }
+.menu a { color: white; text-decoration: none; font-size: 14px; }
+.menu a:hover { color: #e0bd73; }
+.portada { position: relative; background: #183b32; min-height: 430px; }
+.portada img { width: 100%; height: 430px; object-fit: cover; display: block; opacity: .78; }
+.portada-texto { position: absolute; top: 50%; left: 8%; transform: translateY(-50%); max-width: 520px; color: white; }
+.portada h1 { font-family: Georgia, serif; font-size: 48px; line-height: 1.15; margin: 12px 0; }
+.etiqueta, .sobrelinea, .numero { color: #c7a45e; font-size: 12px; font-weight: bold; letter-spacing: 2px; }
+.seccion { max-width: 1120px; margin: 65px auto; padding: 0 25px; }
+.seccion h2 { font-family: Georgia, serif; font-size: 34px; color: #183b32; margin: 8px 0 12px; }
+.descripcion { color: #68746b; margin-bottom: 25px; }
+.bienvenida { max-width: 850px; text-align: center; }
+.beneficios { display: inline-block; text-align: left; }
+.tarjetas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.tarjeta { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 6px 18px #263b3215; }
+.tarjeta img { width: 100%; height: 190px; object-fit: cover; display: block; }
+.contenido-tarjeta { padding: 20px; }
+.contenido-tarjeta h3 { font-family: Georgia, serif; font-size: 23px; margin: 8px 0; }
+.contenido-tarjeta a { color: #8a682f; font-weight: bold; text-decoration: none; }
+.contenido-tarjeta a:hover { text-decoration: underline; }
+.bloque-mexico { background: #183b32; color: white; max-width: none; padding: 55px max(25px, calc((100% - 1070px) / 2)); display: flex; align-items: center; gap: 45px; }
+.texto-mexico { flex: 1; }
+.bloque-mexico h2 { color: white; }
+.bloque-mexico img { width: 42%; border-radius: 10px; }
+.boton { display: inline-block; background: #c7a45e; color: #183b32; border: 0; border-radius: 5px; padding: 12px 20px; font-weight: bold; text-decoration: none; cursor: pointer; }
+.boton:hover { background: #dfc58d; }
+.boton-claro { margin-top: 12px; }
+.tabla-contenedor { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: white; }
+th, td { border: 1px solid #d9d5c8; padding: 14px; text-align: left; }
+th { background: #183b32; color: white; }
+tr:nth-child(even) { background: #eeeadd; }
+.video { width: 100%; max-width: 850px; margin: 20px auto; aspect-ratio: 16 / 9; }
+.video iframe { width: 100%; height: 100%; border: 0; border-radius: 10px; }
+.nota { color: #777b70; font-size: 13px; }
+.contacto form { max-width: 650px; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 5px 18px #263b3212; }
+.campo { margin-bottom: 18px; }
+.campo label { display: block; font-weight: bold; margin-bottom: 6px; }
+.campo input { width: 100%; padding: 12px; border: 1px solid #c9c6b9; border-radius: 5px; font-size: 15px; }
+.campo input:focus { outline: 2px solid #c7a45e; }
+.mensaje { color: #236342; font-weight: bold; }
+footer { background: #102a23; color: white; text-align: center; padding: 30px 15px; }
+.nombre-footer { color: #d9bd7b; font-family: Georgia, serif; font-size: 24px; letter-spacing: 3px; }
+footer a { color: #e0bd73; text-decoration: none; }
+@media (max-width: 800px) {
+ .encabezado { flex-direction: column; }
+ .menu { justify-content: center; }
+ .tarjetas { grid-template-columns: 1fr 1fr; }
+ .bloque-mexico { flex-direction: column; }
+ .bloque-mexico img { width: 100%; }
+}
+@media (max-width: 550px) {
+ .portada, .portada img { min-height: 470px; height: 470px; }
+ .portada-texto { left: 7%; right: 7%; }
+ .portada h1 { font-size: 35px; }
+ .menu { gap: 12px; }
+ .menu a { font-size: 13px; }
+ .tarjetas { grid-template-columns: 1fr; }
+ .seccion h2 { font-size: 28px; }
+ th, td { padding: 9px; font-size: 13px; }
+}

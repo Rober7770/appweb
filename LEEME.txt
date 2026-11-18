@@ -1,0 +1,30 @@
+HISTOMUNDO - PROYECTO WEB DE HISTORIA
+
+PARA ABRIR:
+1. Descomprime el ZIP.
+2. Abre la carpeta en Visual Studio Code.
+3. Abre index.html en el navegador o utiliza Live Server.
+
+ARCHIVOS:
+- index.html: contenido y estructura HTML5.
+- estilos.css: diseño, colores, tipografías y adaptación a pantallas.
+- script.js: mini evaluación, validación, alertas y mensajes.
+- imagenes/: doce imágenes distintas guardadas localmente.
+
+LISTA DE COTEJO:
+1. Etiquetas semánticas: header, nav, main, section y footer.
+2. Diseño responsivo: estilos para escritorio, tableta y celular.
+3. CSS externo: tipografías, paleta, espaciados y diseño coherente.
+4. Imágenes locales, proporcionadas y con atributo alt.
+5. Hipervínculos internos y externos.
+6. Listas ordenadas y desordenadas.
+7. Tabla con thead, tbody, tr, th y td.
+8. Formularios con label, input, select y botón.
+9. Video integrado con iframe y controles del reproductor.
+10. Alertas y mensajes visuales al calificar y enviar el formulario.
+11. Archivos separados y carpeta de imágenes organizada.
+
+NOTAS:
+- El video y Google Fonts requieren conexión a internet.
+- El formulario de contacto es demostrativo; no guarda ni envía datos a un servidor.
+- La mini evaluación sí califica las tres preguntas en el navegador.
